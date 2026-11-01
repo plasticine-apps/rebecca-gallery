@@ -1,0 +1,13 @@
+{
+  "name": "rebecca-gallery",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "check": "node src/check.mjs",
+    "serve": "npx --yes serve dist"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}
