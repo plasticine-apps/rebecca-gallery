@@ -30,6 +30,7 @@ the deploy finished.
 - **Add a painting:** *"In github.com/plasticine-apps/rebecca-gallery, add a
   painting titled 'Blue Dawn', acrylic on canvas, 24x18, not sold. The image
   is in my Google Drive folder 'Rebecca paintings to add' (file blue-dawn.jpg).
+  (Folder: https://drive.google.com/drive/folders/1_9p8FwlULwXrqJrRlpgnompDxfyzJC9r)
   Put it first."* — The image can also be given as a path, a URL, or dragged
   into the prompt.
 - **Retitle / mark sold / resize:** *"...mark 'Heart' as sold"*, *"...retitle
