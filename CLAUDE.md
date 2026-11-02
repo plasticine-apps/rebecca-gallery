@@ -19,7 +19,13 @@ baselib, no Cloud Run, no Axiom, no fleet conventions. Keep it that simple.
      `"Acrylic on canvas"`; include `"sold": true` only when sold.
    - Getting the image: a Google Drive file comes via the Drive connector
      (`download_file_content`); a URL via curl; a dragged-in image is saved
-     to disk by the harness and its path is in the prompt.
+     to disk by the harness and its path is in the prompt. An **email
+     attachment** cannot be downloaded through the Gmail connector; fetch it
+     from Mirror's archive instead: `gcloud storage ls -l
+     gs://plasticine-prod-mirror-email-images/` (platform credential
+     `~/secrets/plasticine2/gcp-key.json`), pick the object written within a
+     minute or two of the email's arrival and matching its size, download it,
+     and confirm by viewing it before using it.
 3. `npm ci && npm run build && npm run check` — both must pass.
 4. Look at `dist/index.html` for the new entry (and, for a new image, open
    `dist/img/<slug>-thumb.jpg` to confirm orientation — phone photos carry
