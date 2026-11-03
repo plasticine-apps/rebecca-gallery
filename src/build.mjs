@@ -18,7 +18,8 @@ async function readJson(name) {
 }
 
 function layout({ title, page, body, extraHead = '' }) {
-  const nav = [['index.html', 'Paintings', 'paintings'], ['raps.html', 'Raps', 'raps'], ['about.html', 'About', 'about']]
+  // Raps tab hidden (raps.html is still built); restore by re-adding ['raps.html', 'Raps', 'raps'].
+  const nav = [['index.html', 'Paintings', 'paintings'], ['about.html', 'About', 'about']]
     .map(([href, label, id]) => `<a href="${href}"${id === page ? ' aria-current="page"' : ''}>${label}</a>`)
     .join('');
   return `<!doctype html>
